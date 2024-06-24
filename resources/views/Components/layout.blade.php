@@ -27,9 +27,9 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-              <x-nav-link href="/home" :active="request()->is('home')" type="button">Home</x-nav-link>
-              <x-nav-link href="/about" :active="request()->is('about')" type="anchor">About</x-nav-link>
-              <x-nav-link href="/contact" :active="request()->is('contact')" type="button">Contacts</x-nav-link>
+              <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+              <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
+              <x-nav-link href="/contact" :active="request()->is('contact')">Contacts</x-nav-link>
             </div>
           </div>
         </div>
@@ -79,8 +79,8 @@
     <div class="md:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="/home" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-        <a href="/about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+        <a href="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+        <a href="/jobs" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Jobs</a>
         <a href="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contacts</a>
       </div>
       <div class="border-t border-gray-700 pb-3 pt-4">
@@ -112,7 +112,7 @@
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <!-- Your content -->
-       Slotted content
+       {{ $slot }}
     </div>
   </main>
 </div>

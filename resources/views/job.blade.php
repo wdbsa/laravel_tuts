@@ -1,6 +1,7 @@
 <x-layout>
     <x-slot:heading>
-        About Page
+        Job
     </x-slot:heading>
-    <h1>About Page</h1>
+
+    <h1>{{ $job['id'] }}</h2>
 </x-layout>
