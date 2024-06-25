@@ -3,5 +3,5 @@
         Job
     </x-slot:heading>
 
-    <h1>{{ $job['id'] }}</h2>
+    <h1>{{ $job['title'] }}. Pays {{ $job['salary'] }}</h2>
 </x-layout>
